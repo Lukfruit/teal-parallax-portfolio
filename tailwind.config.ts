@@ -29,7 +29,7 @@ export default {
           dark: "#006666",
         },
         soft: {
-          bg: "#F8FAFC",
+          bg: "#F1F0FB",
           text: "#334155",
         },
       },

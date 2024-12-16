@@ -18,12 +18,12 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="bg-soft-bg min-h-screen relative">
+    <main className="bg-[#F6EFE9] min-h-screen relative">
       <Hero />
       <div className="relative">
         {/* Content background with parallax */}
         <div 
-          className="absolute inset-x-0 -top-20 bottom-0 bg-soft-bg/95"
+          className="absolute inset-x-0 -top-20 bottom-0 bg-[#F1F0FB]/95"
           style={{
             transform: "translateY(calc(var(--scroll) * 0.2))",
           }}
