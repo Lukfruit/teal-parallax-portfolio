@@ -1,0 +1,50 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { Mail, Github, Linkedin } from "lucide-react";
+
+export const Contact = () => {
+  return (
+    <section className="py-20 bg-soft-bg/30">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-soft-text mb-8">
+            Get In Touch
+          </h2>
+          <p className="text-lg text-soft-text/80 mb-12">
+            I'm always open to new opportunities and interesting projects.
+          </p>
+          <div className="flex justify-center gap-8">
+            <a
+              href="mailto:your.email@example.com"
+              className="text-soft-text/70 hover:text-primary transition-colors"
+            >
+              <Mail size={24} />
+            </a>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-soft-text/70 hover:text-primary transition-colors"
+            >
+              <Github size={24} />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-soft-text/70 hover:text-primary transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
