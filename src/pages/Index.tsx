@@ -41,11 +41,11 @@ const Index = () => {
           <About />
         </div>
 
-//         {/* Option 3: Darker Current Color */}
-  //      <div className="relative z-10 bg-[#E1E0F5]/95 p-8 mb-8">
-    //      <h3 className="text-2xl font-bold mb-4">Option 3: Darker Current Color</h3>
-      //    <About />
-       // </div>
+{/* Option 3: Darker Current Color
+  <div className="relative z-10 bg-[#E1E0F5]/95 p-8 mb-8">
+    <h3 className="text-2xl font-bold mb-4">Option 3: Darker Current Color</h3>
+      <About />
+       </div> */}
 
         <div className="relative z-10">
           <Projects />
