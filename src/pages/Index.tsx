@@ -25,7 +25,7 @@ const Index = () => {
         <div 
           className="absolute inset-x-0 -top-96 h-[150%] bg-[#FDE1D3]/95"
           style={{
-            transform: "translateY(calc(var(--scroll) * 0.4))", // Medium speed (half of content speed)
+            transform: "translateY(calc(var(--scroll) * 0.2))", // Medium speed (half of content speed)
           }}
         />
         
