@@ -8,7 +8,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
         style={{
-          transform: "translateY(calc(var(--scroll) * 0.5))",
+          transform: "translateY(calc(var(--scroll) * 0.3))", // Reduced from 0.5 to 0.3 to make it move less
         }}
       >
         <span className="text-[50vw] font-bold text-primary/5 whitespace-nowrap select-none">
