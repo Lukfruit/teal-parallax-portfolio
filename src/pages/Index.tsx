@@ -29,9 +29,9 @@ const Index = () => {
           }}
         />
         
-        <div className="relative z-10 pb-20" style={{
-          transform: "translateY(calc(var(--scroll) * 0.8))", // Fastest speed for content
-        }}>
+        <div className="relative z-10 pb-20">// style={{
+          //transform: "translateY(calc(var(--scroll) * 0.8))", Fastest speed for content
+        //}}>
           <About />
           <Projects />
           <Contact />
