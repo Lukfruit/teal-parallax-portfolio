@@ -21,9 +21,9 @@ const Index = () => {
     <main className="bg-[#F6EFE9] min-h-screen relative">
       <Hero />
       <div className="relative">
-        {/* Content background with parallax - adjusted position and speed */}
+        {/* Content background with parallax - adjusted height */}
         <div 
-          className="absolute inset-x-0 -top-96 h-[200%] bg-[#FDE1D3]/95"
+          className="absolute inset-x-0 -top-96 h-[150%] bg-[#FDE1D3]/95"
           style={{
             transform: "translateY(calc(var(--scroll) * 0.6))",
           }}
