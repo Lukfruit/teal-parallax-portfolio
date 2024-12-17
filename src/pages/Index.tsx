@@ -19,7 +19,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="bg-[#F6EFE9] min-h-screen relative">
+    <div className="bg-[#F6EFE9] min-h-screen relative">
       <Hero />
       <div className="relative">
         {/* Content background with parallax - removed the unnecessary yellowish overlay */}
@@ -31,11 +31,12 @@ const Index = () => {
         />
 
         {/* Option 2: Soft Peach */}
-        <div className="relative z-10 bg-[#FDE1D3]/95 p-8 mb-8"
+        <div 
+          className="relative z-10 bg-[#FDE1D3]/95 p-8 mb-8"
           style={{
-            padding-top: 5rem;
+            paddingTop: "5rem"
           }}
-          >
+        >
           <About />
         </div>
 
@@ -44,7 +45,7 @@ const Index = () => {
           <Contact />
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
