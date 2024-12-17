@@ -21,15 +21,15 @@ const Index = () => {
     <main className="bg-[#F6EFE9] min-h-screen relative">
       <Hero />
       <div className="relative">
-        {/* Content background with parallax - adjusted speed to reach top before About section */}
+        {/* Content background with parallax - adjusted position and speed */}
         <div 
-          className="absolute inset-x-0 -top-40 h-[150%] bg-[#FDE1D3]/95"
+          className="absolute inset-x-0 -top-96 h-[200%] bg-[#FDE1D3]/95"
           style={{
-            transform: "translateY(calc(var(--scroll) * 0.4))",
+            transform: "translateY(calc(var(--scroll) * 0.6))",
           }}
         />
         
-        <div className="relative z-10">
+        <div className="relative z-10 pb-20">
           <About />
           <Projects />
           <Contact />
