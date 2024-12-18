@@ -34,7 +34,7 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-soft-bg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="bg-[#FDE1D3]/80 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="text-xl font-semibold text-soft-text mb-3">
                 {project.title}
