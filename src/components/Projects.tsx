@@ -6,17 +6,65 @@ const projects = [
     title: "Project One",
     description: "A beautiful web application built with React and TypeScript",
     tags: ["React", "TypeScript", "Tailwind"],
+    bgColor: "bg-[#E5DEFF]/90", // Soft Purple
+    tagColor: "bg-[#6B4EFF]/10 text-[#6B4EFF]"
   },
   {
     title: "Project Two",
     description: "An innovative solution for modern problems",
     tags: ["Next.js", "Node.js", "MongoDB"],
+    bgColor: "bg-[#D3E4FD]/90", // Soft Blue
+    tagColor: "bg-[#2D7FF9]/10 text-[#2D7FF9]"
   },
   {
     title: "Project Three",
     description: "Transforming ideas into reality",
     tags: ["React", "Firebase", "Redux"],
+    bgColor: "bg-[#F2FCE2]/90", // Soft Green
+    tagColor: "bg-[#4CAF50]/10 text-[#4CAF50]"
   },
+  {
+    title: "Project Four",
+    description: "Building seamless user experiences",
+    tags: ["Vue.js", "GraphQL", "AWS"],
+    bgColor: "bg-[#FEF7CD]/90", // Soft Yellow
+    tagColor: "bg-[#F5A623]/10 text-[#F5A623]"
+  },
+  {
+    title: "Project Five",
+    description: "Creating innovative digital solutions",
+    tags: ["Angular", "Python", "Docker"],
+    bgColor: "bg-[#FFE8D6]/90", // Warm Peach
+    tagColor: "bg-[#008080]/10 text-[#008080]" // Original Teal
+  },
+  {
+    title: "Project Six",
+    description: "Developing cutting-edge applications",
+    tags: ["Svelte", "Go", "Kubernetes"],
+    bgColor: "bg-[#FFDEE2]/90", // Soft Pink
+    tagColor: "bg-[#FF4D6A]/10 text-[#FF4D6A]"
+  },
+  {
+    title: "Project Seven",
+    description: "Optimizing performance at scale",
+    tags: ["React", "Ruby", "Redis"],
+    bgColor: "bg-[#E0F2F1]/90", // Soft Mint
+    tagColor: "bg-[#009688]/10 text-[#009688]"
+  },
+  {
+    title: "Project Eight",
+    description: "Engineering reliable systems",
+    tags: ["Java", "Spring", "PostgreSQL"],
+    bgColor: "bg-[#F3E5F5]/90", // Light Lavender
+    tagColor: "bg-[#9C27B0]/10 text-[#9C27B0]"
+  },
+  {
+    title: "Project Nine",
+    description: "Crafting delightful interfaces",
+    tags: ["Flutter", "Dart", "Firebase"],
+    bgColor: "bg-[#E1F5FE]/90", // Light Sky Blue
+    tagColor: "bg-[#03A9F4]/10 text-[#03A9F4]"
+  }
 ];
 
 export const Projects = () => {
@@ -34,7 +82,7 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-[#FDE1D3]/80 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className={`${project.bgColor} p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow`}
             >
               <h3 className="text-xl font-semibold text-soft-text mb-3">
                 {project.title}
@@ -44,7 +92,7 @@ export const Projects = () => {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                    className={`px-3 py-1 ${project.tagColor} text-sm rounded-full`}
                   >
                     {tag}
                   </span>
