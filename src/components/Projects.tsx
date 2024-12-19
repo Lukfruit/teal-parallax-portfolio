@@ -4,45 +4,59 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Project One",
-    description: "A beautiful web application built with React and TypeScript",
-    tags: ["React", "TypeScript", "Tailwind"],
-    bgColor: "bg-[#E8F3F3]", // Soft mint
-    tagColor: "bg-[#006666]", // Darker teal
-  },
-  {
-    title: "Project Two",
     description: "An innovative solution for modern problems",
     tags: ["Next.js", "Node.js", "MongoDB"],
     bgColor: "bg-[#F3E8E8]", // Soft rose
     tagColor: "bg-[#8B4513]", // Saddle brown
   },
   {
-    title: "Project Three",
-    description: "Transforming ideas into reality",
-    tags: ["React", "Firebase", "Redux"],
-    bgColor: "bg-[#E8F0F3]", // Soft blue
-    tagColor: "bg-[#1A5F7A]", // Steel blue
-  },
-  {
-    title: "Project Four",
-    description: "Building seamless user experiences",
-    tags: ["Vue.js", "GraphQL", "AWS"],
-    bgColor: "bg-[#F3F0E8]", // Soft cream
-    tagColor: "bg-[#8B7355]", // Warm brown
-  },
-  {
-    title: "Project Five",
+    title: "Project Two",
     description: "Creating intuitive interfaces",
     tags: ["Angular", "Python", "Docker"],
     bgColor: "bg-[#ECF3E8]", // Soft sage
     tagColor: "bg-[#4F7942]", // Fern green
   },
   {
+    title: "Project Three",
+    description: "Building with modern technologies",
+    tags: ["React", "TypeScript", "AWS"],
+    bgColor: "bg-[#E5DEFF]", // Soft purple
+    tagColor: "bg-[#6B46C1]", // Deep purple
+  },
+  {
+    title: "Project Four",
+    description: "Crafting digital experiences",
+    tags: ["Vue", "GraphQL", "Tailwind"],
+    bgColor: "bg-[#D3E4FD]", // Soft blue
+    tagColor: "bg-[#2563EB]", // Royal blue
+  },
+  {
+    title: "Project Five",
+    description: "Innovative web solutions",
+    tags: ["React", "Node.js", "PostgreSQL"],
+    bgColor: "bg-[#FFE4D6]", // Lighter peach
+    tagColor: "bg-[#C2410C]", // Burnt orange
+  },
+  {
     title: "Project Six",
-    description: "Developing scalable solutions",
-    tags: ["React Native", "Express", "PostgreSQL"],
-    bgColor: "bg-[#F2E8F3]", // Soft lavender
-    tagColor: "bg-[#614051]", // Eggplant
+    description: "Modern application development",
+    tags: ["Next.js", "tRPC", "Prisma"],
+    bgColor: "bg-[#E0F2F1]", // Soft mint
+    tagColor: "bg-[#0F766E]", // Dark teal
+  },
+  {
+    title: "Project Seven",
+    description: "Cloud-native solutions",
+    tags: ["React", "AWS", "Docker"],
+    bgColor: "bg-[#F0E7F3]", // Soft lilac
+    tagColor: "bg-[#7E22CE]", // Rich purple
+  },
+  {
+    title: "Project Eight",
+    description: "Enterprise applications",
+    tags: ["Angular", "Java", "Spring"],
+    bgColor: "bg-[#EDE9FE]", // Soft violet
+    tagColor: "bg-[#6D28D9]", // Violet
   }
 ];
 

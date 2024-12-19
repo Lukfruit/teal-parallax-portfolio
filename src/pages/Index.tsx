@@ -24,22 +24,9 @@ const Index = () => {
       <FloatingShapes />
       <Hero />
       <div className="relative">
-        <div 
-          className="absolute inset-x-0 -top-40 bottom-[20rem] bg-gradient-to-b from-[#FDE1D3]/95 to-[#F7D9CB]/95"
-          style={{
-            transform: "translateY(calc(var(--scroll) * 0.3))",
-          }}
-        />
-
-        <div 
-          className="relative z-10 bg-[#FDE1D3]/95 p-8 mb-8"
-          style={{
-            paddingTop: "5rem"
-          }}
-        >
+        <div className="relative z-10 bg-[#FDE1D3] p-8 mb-8">
           <About />
         </div>
-
         <div className="relative z-10">
           <Projects />
           <Contact />
