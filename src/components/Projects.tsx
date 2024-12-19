@@ -6,22 +6,22 @@ const projects = [
     title: "Project One",
     description: "A beautiful web application built with React and TypeScript",
     tags: ["React", "TypeScript", "Tailwind"],
-    bgColor: "bg-[#F2FCE2]/90", // Original Soft Green
-    tagColor: "bg-[#4CAF50]/10 text-[#4CAF50]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Two",
     description: "An innovative solution for modern problems",
     tags: ["Next.js", "Node.js", "MongoDB"],
-    bgColor: "bg-[#E8F5E9]/90", // Lighter Soft Green
-    tagColor: "bg-[#2E7D32]/10 text-[#2E7D32]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Three",
     description: "Transforming ideas into reality",
     tags: ["React", "Firebase", "Redux"],
-    bgColor: "bg-[#DCEDC8]/90", // Pale Green
-    tagColor: "bg-[#558B2F]/10 text-[#558B2F]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Four",
@@ -34,36 +34,36 @@ const projects = [
     title: "Project Five",
     description: "Creating innovative digital solutions",
     tags: ["Angular", "Python", "Docker"],
-    bgColor: "bg-[#E0F2F1]/90", // Mint Green
-    tagColor: "bg-[#00796B]/10 text-[#00796B]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Six",
     description: "Developing cutting-edge applications",
     tags: ["Svelte", "Go", "Kubernetes"],
-    bgColor: "bg-[#F0F4C3]/90", // Light Lime
-    tagColor: "bg-[#827717]/10 text-[#827717]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Seven",
     description: "Optimizing performance at scale",
     tags: ["React", "Ruby", "Redis"],
-    bgColor: "bg-[#E8F6E9]/90", // Fresh Green
-    tagColor: "bg-[#1B5E20]/10 text-[#1B5E20]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Eight",
     description: "Engineering reliable systems",
     tags: ["Java", "Spring", "PostgreSQL"],
-    bgColor: "bg-[#CCE5CC]/90", // Sage Green
-    tagColor: "bg-[#2E582E]/10 text-[#2E582E]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   },
   {
     title: "Project Nine",
     description: "Crafting delightful interfaces",
     tags: ["Flutter", "Dart", "Firebase"],
-    bgColor: "bg-[#E6EFE6]/90", // Misty Green
-    tagColor: "bg-[#3E573E]/10 text-[#3E573E]"
+    bgColor: "bg-[#F1F8E9]/90", // Very Light Green
+    tagColor: "bg-[#33691E]/10 text-[#33691E]"
   }
 ];
 
