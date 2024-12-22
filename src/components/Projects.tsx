@@ -96,14 +96,14 @@ export const Projects = () => {
                     key={tag} 
                     className={`flex items-center ${
                       tagIndex === 0 
-                        ? 'justify-end pr-2' 
+                        ? 'justify-end' 
                         : tagIndex === 2 
-                          ? 'justify-start pl-2' 
+                          ? 'justify-start' 
                           : 'justify-center'
                     }`}
                   >
                     <span
-                      className={`px-3 py-1 ${project.tagColor} text-sm rounded-full`}
+                      className={`px-3 py-1 ${project.tagColor} text-sm rounded-full mx-1`}
                     >
                       {tag}
                     </span>
