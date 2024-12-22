@@ -68,6 +68,13 @@ const projects = [
 ];
 
 export const Projects = () => {
+  // Function to calculate the width based on the longest tag in each project
+  const getMaxTagWidth = (tags: string[]) => {
+    const maxLength = Math.max(...tags.map(tag => tag.length));
+    // Add some padding to the calculated width
+    return `${maxLength * 0.7 + 2}rem`;
+  };
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -91,24 +98,28 @@ export const Projects = () => {
                 <p className="text-soft-text/70 mb-4">{project.description}</p>
               </div>
               <div className="grid grid-cols-3 gap-0.5 mt-auto">
-                {project.tags.map((tag, tagIndex) => (
-                  <div 
-                    key={tag} 
-                    className={`flex items-center ${
-                      tagIndex === 0 
-                        ? 'justify-end' 
-                        : tagIndex === 2 
-                          ? 'justify-start' 
-                          : 'justify-center'
-                    }`}
-                  >
-                    <span
-                      className={`px-3 py-1 ${project.tagColor} text-sm rounded-full mx-1`}
+                {project.tags.map((tag, tagIndex) => {
+                  const maxWidth = getMaxTagWidth(project.tags);
+                  return (
+                    <div 
+                      key={tag} 
+                      className={`flex items-center ${
+                        tagIndex === 0 
+                          ? 'justify-end' 
+                          : tagIndex === 2 
+                            ? 'justify-start' 
+                            : 'justify-center'
+                      }`}
                     >
-                      {tag}
-                    </span>
-                  </div>
-                ))}
+                      <span
+                        className={`px-3 py-1 ${project.tagColor} text-sm rounded-full mx-1 inline-block text-center`}
+                        style={{ width: maxWidth }}
+                      >
+                        {tag}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </motion.div>
           ))}
