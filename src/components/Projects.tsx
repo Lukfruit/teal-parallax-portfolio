@@ -91,8 +91,17 @@ export const Projects = () => {
                 <p className="text-soft-text/70 mb-4">{project.description}</p>
               </div>
               <div className="grid grid-cols-3 gap-0.5 mt-auto">
-                {project.tags.map((tag) => (
-                  <div key={tag} className="flex justify-center items-center">
+                {project.tags.map((tag, tagIndex) => (
+                  <div 
+                    key={tag} 
+                    className={`flex items-center ${
+                      tagIndex === 0 
+                        ? 'justify-end pr-2' 
+                        : tagIndex === 2 
+                          ? 'justify-start pl-2' 
+                          : 'justify-center'
+                    }`}
+                  >
                     <span
                       className={`px-3 py-1 ${project.tagColor} text-sm rounded-full`}
                     >
