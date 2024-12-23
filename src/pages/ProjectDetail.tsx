@@ -34,7 +34,7 @@ const ProjectDetail = () => {
         >
           <span className="font-bold text-primary/5 whitespace-nowrap select-none translate-x-[0.5%] translate-y-[-26%] sm:translate-x-0 sm:translate-y-0"
             style={{
-              fontSize: "clamp(13rem, 50vw, 40rem)",
+              fontSize: "clamp(13rem, 50vw, 40rem)", // Min size 10rem, scales with viewport, max size 25rem
             }}>
             {project.title}
           </span>
