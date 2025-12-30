@@ -11,9 +11,9 @@ export const Hero = () => {
           transform: "translateY(calc(var(--scroll) * 0.7))",
         }}
       >
-        <span className="font-bold text-primary/5 whitespace-nowrap select-none translate-x-[0.5%] translate-y-[-26%] sm:translate-x-0 sm:translate-y-0"
+        <span className="font-bold text-primary/10 whitespace-nowrap select-none translate-x-[0.5%] translate-y-[-26%] sm:translate-x-0 sm:translate-y-0"
           style={{
-    fontSize: "clamp(13rem, 50vw, 40rem)", // Min size 10rem, scales with viewport, max size 25rem
+    fontSize: "clamp(13rem, 50vw, 40rem)",
   }}>
           Your Name
         </span>
@@ -26,11 +26,11 @@ export const Hero = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <h1 className="text-6xl md:text-8xl font-bold text-soft-text mb-6">
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6">
             Hello, I'm
             <span className="text-primary block mt-2">Your Name</span>
           </h1>
-          <p className="text-xl md:text-2xl text-soft-text/80">
+          <p className="text-xl md:text-2xl text-muted-foreground">
             I create beautiful digital experiences
           </p>
         </motion.div>
