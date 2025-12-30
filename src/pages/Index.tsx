@@ -19,20 +19,19 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="bg-[#F6EFE9] min-h-screen relative">
+    <div className="bg-background min-h-screen relative">
       <Hero />
       <div className="relative">
-        {/* Content background with parallax - removed the unnecessary yellowish overlay */}
+        {/* Content background with parallax */}
         <div 
-          className="absolute inset-x-0 -top-40 bottom-[20rem] bg-gradient-to-b from-[#FDE1D3]/95 to-[#F7D9CB]/95"
+          className="absolute inset-x-0 -top-40 bottom-[20rem] bg-gradient-to-b from-accent to-secondary"
           style={{
             transform: "translateY(calc(var(--scroll) * 0.3))",
           }}
         />
 
-        {/* Option 2: Soft Peach */}
         <div 
-          className="relative z-10 bg-[#FDE1D3]/95 p-8 mb-8"
+          className="relative z-10 bg-accent p-8 mb-8"
           style={{
             paddingTop: "5rem"
           }}
