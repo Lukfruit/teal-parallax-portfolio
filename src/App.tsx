@@ -10,6 +10,10 @@ import { ThemeToggle } from "./components/ThemeToggle";
 
 const queryClient = new QueryClient();
 
+const basename = window.location.pathname.startsWith("/teal-parallax-portfolio")
+  ? "/teal-parallax-portfolio"
+  : "";
+
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
     <QueryClientProvider client={queryClient}>
@@ -17,7 +21,7 @@ const App = () => (
         <ThemeToggle />
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/project/:id" element={<ProjectDetail />} />
