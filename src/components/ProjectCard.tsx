@@ -38,10 +38,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </h3>
         <p className="text-muted-foreground mb-4">{description}</p>
       </div>
-      <div className="grid grid-cols-3 mt-auto" style={{ gridAutoRows: '1rem', gap: '0.125rem' }}>
+      <div className="grid grid-cols-3 gap-0.5 mt-auto" style={{ gridAutoRows: '1.25rem' }}>
         {tags.map((tag, tagIndex) => {
           const maxWidth = getMaxTagWidth(tags);
-          const isFat = tag.length >= 8;
+          const isFat = tag.length >= 10;
           const colIndex = tagIndex % 3;
           return (
             <div 
@@ -55,7 +55,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               } ${isFat ? 'row-span-2' : 'row-span-1'}`}
             >
               <span
-                className={`px-3 bg-secondary text-primary text-sm rounded-full mx-1 inline-block text-center ${isFat ? 'py-2' : 'py-0.5'}`}
+                className={`px-3 py-1 bg-secondary text-primary text-sm rounded-full mx-1 inline-block text-center`}
                 style={{ width: maxWidth }}
               >
                 {tag}
