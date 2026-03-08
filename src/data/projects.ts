@@ -37,10 +37,18 @@ export const projects: Project[] = [
 
   // ---------- Project Two ----------
   {
-    id: "project-two",
-    title: "Project Two",
-    description: "An innovative solution for modern problems",
-    tags: ["Next.js", "Node.js", "MongoDB"],
+    id: "youtube-tab-counter",
+    title: "YouTube Tab Counter",
+    description: "A Firefox extension that analyses your browser tabs and outputs detailed data on YouTube ones — including channels, tags, and watch time. Works with unloaded tabs.",
+    detailedDescription: `A Firefox browser extension that scans all open tabs to identify and analyse YouTube content. It provides statistics like total tabs, identified channels, unique tags, and a ranked list of top interests by time spent.
+
+    The extension works seamlessly with unloaded (discarded) tabs, meaning it can gather data even from tabs that haven't been fully loaded into memory — making it lightweight and efficient.
+    
+    Recently submitted for public release on the Firefox Add-ons store.`,
+    challenges: "Handling unloaded/discarded tabs required working around browser API limitations, as tab content isn't directly accessible when tabs are suspended.",
+    solutions: "Used the Firefox WebExtensions API to extract tab URLs and metadata without requiring tabs to be fully loaded, enabling efficient scanning of large tab collections.",
+    tags: ["HTML", "JavaScript", "CSS"],
+    repo: "https://github.com/Lukfruit/Firefox-Youtube-Tab-counter",
   },
 
   // ---------- Project Three ----------
