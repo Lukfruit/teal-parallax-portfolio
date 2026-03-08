@@ -119,6 +119,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
               )}
             </div>
           )}
+        </div>
       </DialogContent>
     </Dialog>
   );
