@@ -31,7 +31,7 @@ export const projects: Project[] = [
     The analysis also uncovered a 65% one-time purchase rate, highlighting a major conversion opportunity, and identified 345k lapsed customers as a win-back target.`,
     challenges: "Working with 31M+ transaction records required careful data engineering to extract meaningful RFM (Recency, Frequency, Monetary) features from raw purchase data while keeping processing efficient.",
     solutions: "Leveraged Python, Pandas, and Scikit-learn to build a scalable pipeline — from data cleaning through K-means clustering with silhouette analysis to determine the optimal number of segments.",
-    tags: ["Python", "Pandas", "Scikit-learn", "K-means"],
+    tags: ["Python", "Pandas", "Scikit-learn", "K-means", "Matplotlib", "Seaborn"],
     repo: "https://github.com/IvanL-works/H-M-Data-Project",
   },
 
