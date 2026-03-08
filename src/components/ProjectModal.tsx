@@ -26,10 +26,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[85vh] overflow-y-auto bg-background border-border p-0">
-        {/* Hero section */}
-        <div className="relative flex flex-col overflow-hidden px-8 pt-10 pb-8">
-          {/* Subtle background accent */}
-          <div className="absolute top-0 left-0 w-full h-1 bg-primary/20" />
+        {/* Hero section with giant background text */}
+        <div className="relative flex flex-col overflow-hidden px-8 pt-10 pb-8 min-h-[280px] justify-end">
+          {/* Giant background text */}
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+            <span 
+              className="font-bold text-primary/[0.07] dark:text-primary/[0.12] whitespace-nowrap select-none"
+              style={{ fontSize: "clamp(6rem, 20vw, 12rem)" }}
+            >
+              {project.title}
+            </span>
+          </div>
 
           <DialogHeader className="text-left mb-5">
             <DialogTitle className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
