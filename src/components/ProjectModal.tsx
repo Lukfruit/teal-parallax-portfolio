@@ -1,5 +1,6 @@
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Github, ExternalLink } from "lucide-react";
 
 interface Project {
   id: string;
@@ -9,6 +10,8 @@ interface Project {
   detailedDescription?: string;
   challenges?: string;
   solutions?: string;
+  repo?: string;
+  link?: string;
 }
 
 interface ProjectModalProps {
