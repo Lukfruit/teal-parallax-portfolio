@@ -38,7 +38,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </h3>
         <p className="text-muted-foreground mb-4">{description}</p>
       </div>
-      <div className="grid grid-cols-3 gap-0.5 mt-auto">
+      <div className="grid grid-cols-3 gap-2 mt-auto">
         {tags.map((tag, tagIndex) => {
           const maxWidth = getMaxTagWidth(tags);
           const isFat = tag.length >= 10;
