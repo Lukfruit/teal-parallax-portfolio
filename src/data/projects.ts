@@ -65,13 +65,19 @@ export const projects: Project[] = [
     repo: "https://github.com/Lukfruit/PersonalPortfolio",
   },
 
-  // ---------- Project Four ----------
+  // ---------- LinguaWeb ----------
   {
-    id: "project-four",
-    title: "Project Four",
-    description: "Building seamless user experiences",
-    tags: ["Vue.js", "GraphQL", "AWS"],
-    visible: false,
+    id: "linguaweb",
+    title: "LinguaWeb",
+    description: "An AI-powered iOS app for English speakers learning Korean, combining spaced repetition science with LLM morphological analysis for natural vocabulary acquisition.",
+    detailedDescription: `LinguaWeb takes a sentence-first approach to vocabulary learning. Rather than flashcard drills, users practice by writing Korean sentences freely — an AI then detects which vocabulary words were used, regardless of conjugation or grammatical form.
+
+    A scientifically-grounded spaced repetition system (SM-2 with ease factor integration) tracks each word's history across 8 proficiency levels, surfacing the right words at the right time through a dynamic 30-word focus queue.
+    
+    The app also generates personalised reading comprehension texts calibrated to the user's known vocabulary, and includes an offline 10,000+ word NIKL Korean-English dictionary with camera OCR for real-world sentence mining.`,
+    challenges: "Korean is agglutinative — the same root can appear in dozens of forms. Early AI-generated reading texts had high rejection rates due to no visibility into user vocabulary. The app was initially tightly coupled to a single AI provider. Simple success/failure SRS tracking was gameable.",
+    solutions: "Used Gemini's LLM morphological analysis with Apple NLP as fallback for inflection-agnostic word detection. Implemented structured generation passing known vocabulary as a palette. Designed a Model Abstraction Layer with provider-agnostic protocol for swapping models. Built an encounters system with rolling 10-interaction history distinguishing genuine recall from lookups (0.5× XP).",
+    tags: ["SwiftUI", "SQLite", "Gemini API", "Apple Vision", "SM-2 SRS"],
   },
 
   // ---------- Project Five ----------
