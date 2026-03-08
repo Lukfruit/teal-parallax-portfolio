@@ -20,7 +20,7 @@ function computeTagLayout(tags: string[]): TagLayout[] {
   const longTags: string[] = [];
   const shortTags: string[] = [];
   tags.forEach(tag => {
-    if (tag.length >= 10) longTags.push(tag);
+    if (tag.length >= 11) longTags.push(tag);
     else shortTags.push(tag);
   });
 
