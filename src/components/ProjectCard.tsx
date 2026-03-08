@@ -67,7 +67,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onClick,
 }) => {
   const getMaxTagWidth = (tags: string[]) => {
-    const shortTags = tags.filter(t => t.length < 11);
+    const shortTags = tags.filter(t => t.length < LONG_TAG_THRESHOLD);
     if (shortTags.length === 0) return "4rem";
     const maxLength = Math.max(...shortTags.map(tag => tag.length));
     return `${maxLength * 0.7 + 2}rem`;
