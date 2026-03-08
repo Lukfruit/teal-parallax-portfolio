@@ -26,7 +26,7 @@ export const Projects = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
+        <h2 className={`text-4xl md:text-5xl font-bold text-foreground mb-12 ${topGroup.length === 0 ? 'text-center' : ''}`}>
           Projects
         </h2>
         {topGroup.length > 0 && (
