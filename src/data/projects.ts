@@ -127,6 +127,6 @@ export const projects: Project[] = [
     title: "Project Six",
     description: "Developing cutting-edge applications",
     tags: ["Svelte", "Go", "Kubernetes"],
-    visible: true,
+    visible: false,
   },
 ];
