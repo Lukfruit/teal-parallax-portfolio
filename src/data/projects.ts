@@ -118,7 +118,7 @@ export const projects: Project[] = [
     title: "Project Five",
     description: "Creating innovative digital solutions",
     tags: ["Angular", "Python", "Docker"],
-    visible: true,
+    visible: false,
   },
 
   // ---------- Project Six ----------
