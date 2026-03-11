@@ -16,6 +16,7 @@ interface Project {
   challengesSolutions?: ChallengeSolution[];
   repo?: string;
   link?: string;
+  firefoxAddon?: string;
 }
 
 interface ProjectModalProps {
